@@ -1,15 +1,167 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>My GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>日曜日何する？リスト</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #1e2a38;
+      color: #fff;
+      padding: 1.2em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4em;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-left: 6px solid #007acc;
+      padding-left: 12px;
+      color: #1e2a38;
+      margin-bottom: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.01);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    .card a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .tags {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #e6f0fa;
+      color: #005fa3;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 4px 6px 0 0;
+    }
+    @media (max-width: 600px) {
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>こんにちは、GitHub Pages！</h1>
-    <p>これはGitHub PagesでホストされているシンプルなHTMLページです。</p>
+  <header>
+    <h1>日曜日何する〜とりあえず思い浮かんだのリストアップした</h1>
+  </header>
 
-    <hr>
+  <div class="container">
 
-    <p>© 2025 My GitHub Page</p>
+    <!-- 映画セクション -->
+    <section>
+      <h2>🎬 映画（7/20 京成ローザ10｜15:00〜16:00上映）</h2>
+
+      <div class="card">
+        <h3><a href="https://press.moviewalker.jp/mv86659/" target="_blank">劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来</a></h3>
+        <div class="tags">
+          <span class="tag">上映時間：14:55〜</span>
+          <span class="tag">上映時間：15:25〜</span>
+          <span class="tag">アニメ／アクション</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://press.moviewalker.jp/mv88573/" target="_blank">F1(R)／エフワン</a></h3>
+        <div class="tags">
+          <span class="tag">上映時間：15:30〜</span>
+          <span class="tag">ドキュメンタリー／モータースポーツ</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://press.moviewalker.jp/mv88507/" target="_blank">ドールハウス</a></h3>
+        <div class="tags">
+          <span class="tag">上映時間：16:00〜</span>
+          <span class="tag">ホラー／スリラー</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 居酒屋セクション -->
+    <section>
+      <h2>🍶 居酒屋</h2>
+      <div class="card">
+        <h3><a href="https://tabelog.com/chiba/A1201/A120101/12035164/" target="_blank">NEO JAPANESE STANDARD 千葉店</a></h3>
+        <div class="tags">
+          <span class="tag">電子タバコ可</span>
+          <span class="tag">徒歩8分</span>
+          <span class="tag">日本酒たくさん</span>
+          <span class="tag">馬刺しあり</span>
+          <span class="tag">海鮮あり</span>
+          <span class="tag">焼き鳥なし</span>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h3><a href="https://tabelog.com/chiba/A1201/A120101/12059338/" target="_blank">串ごろ 千葉店</a></h3>
+        <div class="tags">
+          <span class="tag">電子タバコ可</span>
+          <span class="tag">徒歩1分</span>
+          <span class="tag">日本酒19種</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://tabelog.com/chiba/A1201/A120101/12060556/" target="_blank">吟乃月 千葉店</a></h3>
+        <div class="tags">
+          <span class="tag">喫煙可</span>
+          <span class="tag">徒歩1分</span>
+          <span class="tag">日本酒6種</span>
+          <span class="tag">焼き鳥あり</span>
+          <span class="tag">海鮮あり</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://tabelog.com/chiba/A1201/A120101/12059913/" target="_blank">博多こまち 千葉本店</a></h3>
+        <div class="tags">
+          <span class="tag">喫煙可</span>
+          <span class="tag">徒歩3分</span>
+          <span class="tag">日本酒7種（獺祭・田酒あり）</span>
+          <span class="tag">海鮮あり</span>
+          <span class="tag">炭火焼あり</span>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
 </body>
 </html>
